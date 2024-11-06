@@ -1,6 +1,8 @@
 # CR4-Entretenciones
 
 Objetivo General
+Facilitar el acceso al arriendo de juegos de entretenimiento para eventos.
+
 Facilitar el acceso al arriendo de juegos de entretenimiento para eventos
 La idea es crear una página web para CR4 Entretenciones que sea atractiva y fácil de usar, donde los usuarios puedan arrendar juegos para fiestas y eventos de una forma rápida. Que la página no solo sea clara y visualmente entretenida, sino que también les permita a los usuarios elegir y contactarse para reservar, o tener un calendario con la disponibilidad.
 
@@ -31,3 +33,31 @@ Contexto: Carla está organizando la fiesta de cumpleaños de su hijo y quiere a
 Objetivo: Quiere encontrar rápidamente juegos fáciles de instalar y que mantengan a los niños y adultos entretenidos, sin gastar demasiado tiempo en el proceso de reserva.
 Frustración: Carla no tiene experiencia en arriendo de juegos y encuentra complicado saber cuál sería el mejor equipo para una fiesta de niños.
 
+
+Antecedentes:
+
+1.	Imaginarte Eventos
+	•	Positivo: Ofrece una amplia variedad de servicios, incluyendo alquiler de mobiliario, decoración y juegos infantiles, lo que permite a los clientes encontrar múltiples opciones en un solo lugar. ￼
+	•	Negativo: La información sobre cada servicio es limitada, lo que puede dificultar a los usuarios comprender completamente lo que se ofrece.
+    https://imaginarteeventos.com
+
+	2.	Boomerang Fiesta
+	•	Positivo: Presenta una amplia gama de juegos recreativos para eventos, desde clásicos como futbolín y air hockey hasta opciones modernas como simuladores de carreras y realidad virtual. ￼
+	•	Negativo: El sitio carece de un sistema de reserva en línea, lo que obliga a los usuarios a contactar directamente para obtener información sobre disponibilidad y precios.
+    https://boomerangfiesta.com/juegos-para-eventos/alquiler-de-juegos-recreativos/
+	3.	Renta Juegos
+	•	Positivo: Especializada en el arriendo de máquinas de juego, ofrece una experiencia de juego única y emocionante para eventos y fiestas. ￼
+	•	Negativo: La navegación del sitio es algo confusa, y la información sobre los juegos disponibles es limitada, lo que puede dificultar la toma de decisiones por parte de los usuarios.
+    https://rentajuegos.cl/servicios/
+	4.	Grancumple
+	•	Positivo: Ofrece una variedad de juegos para arrendar en eventos infantiles, fiestas y celebraciones, con un enfoque en la satisfacción del cliente y la puntualidad en el servicio. ￼
+	•	Negativo: El diseño del sitio es básico y podría beneficiarse de una actualización para mejorar la experiencia del usuario.
+    https://www.grancumple.cl
+	5.	Juego Kids
+	•	Positivo: Ofrece servicios de alquiler de videojuegos para fiestas, proporcionando una experiencia emocionante y única para los cumpleaños de los niños. ￼
+	•	Negativo: La información sobre los juegos disponibles es limitada, y el sitio carece de un sistema de reserva en línea, lo que puede ser inconveniente para los usuarios.
+    https://www.juegokids.com/alquiler-de-videojuegos/
+	6.	Entretejuegos
+	•	Positivo: Con más de 10 años de experiencia, ofrece una amplia variedad de juegos para arriendo en cumpleaños, eventos y fiestas de empresa, adaptándose a las necesidades de cada cliente. ￼
+	•	Negativo: El sitio carece de un sistema de reserva en línea y la información sobre los juegos disponibles es limitada, lo que puede dificultar la planificación de los eventos por parte de los usuarios.
+    https://entretejuegosrent.cl
