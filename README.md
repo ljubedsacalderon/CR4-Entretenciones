@@ -61,3 +61,6 @@ Antecedentes:
 	•	Positivo: Con más de 10 años de experiencia, ofrece una amplia variedad de juegos para arriendo en cumpleaños, eventos y fiestas de empresa, adaptándose a las necesidades de cada cliente. ￼
 	•	Negativo: El sitio carece de un sistema de reserva en línea y la información sobre los juegos disponibles es limitada, lo que puede dificultar la planificación de los eventos por parte de los usuarios.
     https://entretejuegosrent.cl
+
+
+
