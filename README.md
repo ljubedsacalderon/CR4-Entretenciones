@@ -62,5 +62,6 @@ Antecedentes:
 	•	Negativo: El sitio carece de un sistema de reserva en línea y la información sobre los juegos disponibles es limitada, lo que puede dificultar la planificación de los eventos por parte de los usuarios.
     https://entretejuegosrent.cl
 
+![CR4 Entretenciones Moodboard](https://github.com/ljubedsacalderon/CR4-Entretenciones/blob/main/moodboard.jpg?raw=true)
 
 
