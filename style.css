@@ -50,64 +50,129 @@ header .nav-underline .nav-link.active {
 }
 
 /* Hero Section */
+/* Hero Section */
+/* Hero Section */
 .hero {
-    background: linear-gradient(to bottom, #970C16, #970C16);
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0; /* Fondo detrás del contenido */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.svg-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espaciado entre los SVG */
+}
+
+.svg-icon {
+    width: 350px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.svg-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Posiciones específicas de los SVG */
+.plataforma {
+    top: 0%; /* Ajusta la posición */
+    left: 40%;
+}
+
+.airhockey {
+    top: 30%;
+    left: 20%;
+}
+
+.pool {
+    top: 50%;
+    left: 60%;
+}
+
+.tacataca {
+    top: 70%;
+    left: 30%;
+}
+
+.arcade {
+    top: 50%;
+    left: 80%;
+}
+
+/* Hover effect para los SVG */
+.svg-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom */
+    opacity: 1;
+}
+
+/* Textos */
 .hero h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    z-index: 2;
+    position: relative;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
+    z-index: 2;
+    position: relative;
 }
 
 .hero .btn {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #e63946;
+    color: white;
     padding: 0.7rem 1.5rem;
     border-radius: 8px;
-    font-size: 1rem;
     transition: background-color 0.3s ease;
+    z-index: 2;
+    position: relative;
 }
 
 .hero .btn:hover {
-    background-color: #E2A21E;
-}
-.hero {
-    height: 100vh; 
-    overflow: hidden;
+    background-color: #c0392b;
 }
 
-.carousel-item img {
-    height: 100vh; 
-    object-fit: cover; 
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-.carousel-caption h5 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #E2A21E; 
-}
-
-.carousel-caption p {
-    font-size: 1.2rem;
-    color: #ffffff;
-}
 
 
 /* Servicios Section */
+/* Fondo amarillo para los SVGs */
+.card-header {
+    height: 100px; /* Ajustar altura del contenedor */
+    background-color: #FFD700; /* Amarillo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los SVGs */
+.svg-icon {
+    width: 300px; /* Ajustar tamaño del SVG */
+    height: auto;
+}
+
 
 .card {
     border: none;
@@ -149,46 +214,91 @@ header .nav-underline .nav-link.active {
     color: #333;
 }
 
+.card-footer {
+    background-color: white; /* Fondo blanco para que destaque */
+    border-top: 1px solid #ddd; /* Línea separadora para el footer */
+    padding: 10px; /* Espaciado interno */
+}
+
+.price-text {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    color: #000; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    margin: 0; /* Sin margen */
+    text-align: center; /* Centrar el texto */
+}
 
 
 /* Promociones Section */
-#promociones {
-    background-color: #09AEC4;
-    padding: 2rem 1rem;
-    text-align: center;
+
+/* Fondo de las tarjetas */
+.bg-image {
+    height: 400px; /* Ajusta la altura */
+    background-image: url('img/herobg-18.png'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el área */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#promociones h2 {
-    color: #333333;
-    margin-bottom: 1.5rem;
+/* Estilo para los SVG */
+.text-highlight {
+    color: #E2A21E; /* Amarillo */
+    font-weight: bold; /* Negrita */
 }
 
-.promociones-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+/* Ajuste del texto dentro de las tarjetas */
+.card-body {
+    padding: 20px;
 }
 
-.promocion {
-    background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.promocion h3 {
+.card-title {
     font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
     color: #333333;
 }
 
-.promocion p {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #970C16;
+/* Estilo para los SVGs */
+.svg-icon2 {
+    width: 350px; /* Ajusta el tamaño del SVG */
+    height: auto;
 }
+
+/* Hover en las tarjetas */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Contacto Section */
+
+
+.contacto-section .form-control {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border: 1px solid #ccc;
+}
+
+.contacto-section .btn-danger {
+    background-color: #970C16; /* Color del botón */
+    border: none;
+}
+
+.contacto-section .btn-danger:hover {
+    background-color: #E2A21E; /* Color al pasar el ratón */
+}
+
 form input, form textarea, form select, form button {
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -199,14 +309,55 @@ form button {
     color: white;
     font-weight: bold;
     border: none;
-    padding: 0.7rem;
+    padding: 4rem;
+    margin-bottom: 40Px;
     transition: background-color 0.3s ease;
 }
 
 form button:hover {
     background-color: #c0392b;
 }
+.contacto-section {
+    background-image: url('img/herobg-19.png'); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    padding: 50px 0; /* Espaciado interno */
+    
+}
+.contacto-section {
+    background-image: url('img/herobg-19.png'); /* Ruta al archivo de imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    padding: 50px 0;
+    color: BLACK; /* Cambia el texto por defecto a blanco */
+}
 
+.contacto-section .form-control {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border: 1px solid #ccc;
+    color: black;
+}
+
+.contacto-section .form-check-label {
+    color: BLACK;
+}
+
+.contacto-section {
+    background-image: url('img/herobg-19.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
 
 /* General de la galería */
 .gallery-item {
@@ -232,3 +383,27 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #E2A21E;
+}
+
+footer .fa {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+footer .text-danger {
+    color: #E2A21E !important;
+}
+

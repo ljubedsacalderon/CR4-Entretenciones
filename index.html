@@ -31,141 +31,130 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="bg-danger text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
+<header class="bg-danger text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">
                 <img src="logo.png" alt="CR4 Entretenciones" style="max-height: 100px;">
-            </div>
-            <nav>
-                <ul class="nav nav-underline">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#galeria">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+            </a>
         </div>
-    </header>
+        <!-- Navegación -->
+        <nav>
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <!-- Hero Section -->
-<section id="inicio" class="hero">
-    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<!-- Hero Section -->
+<section id="inicio" class="hero position-relative">
+    <!-- Imagen de fondo -->
+    <div class="hero-bg" style="background-image: url('./img/herobg-17.png');"></div>
+
+    <!-- Contenido del Hero -->
+    <div class="container text-center text-white position-relative z-1">
+        <h1 class="display-4 mt-4">¡Lleva tu evento al siguiente nivel!</h1>
+        <p class="lead">Disfruta de nuestra Plataforma 360 y otros juegos increíbles. Haz tu evento inolvidable.</p>
+        <a href="#contacto" class="btn btn-danger btn-lg mt-3">Reserva ahora</a>
+
+        <!-- SVG Icons -->
+        <div class="svg-icons">
+            <img src="./img/plataforma360.svg" class="svg-icon plataforma" alt="Plataforma 360">
+            <img src="./img/airhockey.svg" class="svg-icon airhockey" alt="Air Hockey">
+            <img src="./img/mesadepool.svg" class="svg-icon pool" alt="Mesa de Pool">
+            <img src="./img/tacataca.svg" class="svg-icon tacataca" alt="Taca Taca">
+            <img src="./img/arcade.svg" class="svg-icon arcade" alt="Arcade">
         </div>
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-                <img src="plataforma360.png" class="d-block w-100" alt="Plataforma 360">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>¡Lleva tu evento al siguiente nivel!</h5>
-                    <p>Disfruta de nuestra Plataforma 360 con luces LED, cotillón y videos personalizados.</p>
-                </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-                <img src="airhockey.png" class="d-block w-100" alt="Air Hockey">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Air Hockey</h5>
-                    <p>La diversión que todos disfrutan en cualquier tipo de evento.</p>
-                </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-                <img src="pool.png" class="d-block w-100" alt="Mesa de Pool">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Mesa de Pool</h5>
-                    <p>Agrega entretenimiento de calidad a tu celebración.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Controles -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
     </div>
 </section>
-
-
     <!-- Servicios -->
+<!-- Servicios -->
 <section id="servicios" class="py-5">
     <div class="container">
-        <h2 class="text-center text-danger mb-4">Nuestros Servicios</h2>
+        <h2 class="text-center text-highlight mb-4">Nuestros Servicios</h2>
         <div id="serviciosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <!-- Carrusel indicadores -->
+            <!-- Indicadores -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
 
-            <!-- Carrusel contenido -->
+            <!-- Contenido del Carrusel -->
             <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="row justify-content-center">
+                        <!-- Card 1 -->
                         <div class="col-md-4">
                             <div class="card h-100 text-center">
                                 <img src="img/icono aro de luz.png" class="card-img-top" alt="Plataforma 360">
                                 <div class="card-body">
                                     <h5 class="card-title">Plataforma 360</h5>
-                                    <p class="card-text">Incluye luces LED, cotillón y edición de videos. Desde $60.000.</p>
+                                    <p class="card-text">Incluye luces LED, cotillón y edición de videos.</p>
+                                    <p class="text-bold">$60.000</p>
                                 </div>
                             </div>
                         </div>
+                        <!-- Card 2 -->
                         <div class="col-md-4">
                             <div class="card h-100 text-center">
                                 <img src="img/icono air hockey.png" class="card-img-top" alt="Air Hockey">
                                 <div class="card-body">
                                     <h5 class="card-title">Air Hockey</h5>
-                                    <p class="card-text">Ideal para todo tipo de eventos. $30.000.</p>
+                                    <p class="card-text">Ideal para todo tipo de eventos.</p>
+                                    <p class="text-bold">$30.000</p>
                                 </div>
                             </div>
                         </div>
+                        <!-- Card 3 -->
                         <div class="col-md-4">
                             <div class="card h-100 text-center">
                                 <img src="img/icono mesa de pool.png" class="card-img-top" alt="Mesa de Pool">
                                 <div class="card-body">
                                     <h5 class="card-title">Mesa de Pool</h5>
-                                    <p class="card-text">Diviértete en grande. $40.000.</p>
+                                    <p class="card-text">Diviértete en grande.</p>
+                                    <p class="text-bold">$40.000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Slide 2 -->
                 <div class="carousel-item">
                     <div class="row justify-content-center">
+                        <!-- Card 4 -->
                         <div class="col-md-4">
                             <div class="card h-100 text-center">
                                 <img src="img/icono taca taca.png" class="card-img-top" alt="Taca Taca">
                                 <div class="card-body">
                                     <h5 class="card-title">Taca Taca</h5>
-                                    <p class="card-text">Un clásico para tus eventos. $25.000.</p>
+                                    <p class="card-text">Un clásico para tus eventos.</p>
+                                    <p class="text-bold">$25.000</p>
                                 </div>
                             </div>
                         </div>
+                        <!-- Card 5 -->
                         <div class="col-md-4">
                             <div class="card h-100 text-center">
                                 <img src="img/icono arcade.png" class="card-img-top" alt="Máquina Arcade">
                                 <div class="card-body">
                                     <h5 class="card-title">Máquina Arcade</h5>
-                                    <p class="card-text">Diversión retro para grandes y chicos. $25.000.</p>
+                                    <p class="card-text">Diversión retro para grandes y chicos.</p>
+                                    <p class="text-bold">$25.000</p>
                                 </div>
                             </div>
                         </div>
@@ -176,73 +165,95 @@
             <!-- Controles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
     </div>
 </section>
-
-
-     <!-- Promociones -->
-    <section id="promociones" class="py-5 bg-light">
+<!-- Promociones -->
+<section id="promociones" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center text-danger mb-4">Promociones</h2>
+        <h2 class="text-center text-highlight mb-4">Promociones</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Promoción 1 -->
             <div class="col">
-                <div class="card h-100 text-center border-danger">
+                <div class="card h-100 text-center">
+                    <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
+                        <img src="img/pack%202%20simple.svg" alt="Pack 2 Juegos Simple + Premium" class="svg-icon2">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title text-danger">Pack 2 Juegos Simples + Premium</h5>
-                        <p class="card-text">Ideal para eventos medianos y reuniones. Precio: $45.000.</p>
+                        <h5 class="card-title text-highlight">Pack 2 Juegos Simple + Premium</h5>
+                        <p class="card-text">Ideal para eventos medianos y reuniones.</p>
+                        <p class="card-price"><strong>$45.000</strong></p>
                     </div>
                 </div>
             </div>
             <!-- Promoción 2 -->
             <div class="col">
-                <div class="card h-100 text-center border-primary">
+                <div class="card h-100 text-center">
+                    <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
+                        <img src="img/pack%20simple%20y%20premium.svg" alt="Pack 2 Juegos Simples" class="svg-icon2">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Pack 2 Juegos Simples</h5>
-                        <p class="card-text">Disfruta con amigos. Precio: $40.000.</p>
+                        <h5 class="card-title text-highlight">Pack 2 Juegos Simples</h5>
+                        <p class="card-text">Disfruta con amigos.</p>
+                        <p class="card-price"><strong>$40.000</strong></p>
                     </div>
                 </div>
             </div>
             <!-- Promoción 3 -->
             <div class="col">
-                <div class="card h-100 text-center border-success">
+                <div class="card h-100 text-center">
+                    <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
+                        <img src="img/pack2%20premium.svg" alt="Pack 2 Juegos Premium" class="svg-icon2">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title text-success">Pack 2 Juegos Premium</h5>
-                        <p class="card-text">Perfecto para eventos elegantes. Precio: $60.000.</p>
+                        <h5 class="card-title text-highlight">Pack 2 Juegos Premium</h5>
+                        <p class="card-text">Perfecto para eventos elegantes.</p>
+                        <p class="card-price"><strong>$60.000</strong></p>
                     </div>
                 </div>
             </div>
             <!-- Promoción 4 -->
             <div class="col">
-                <div class="card h-100 text-center border-warning">
+                <div class="card h-100 text-center">
+                    <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
+                        <img src="img/pack3.2.svg" alt="Pack 3 Juegos (2 Simples + 1 Premium)" class="svg-icon2">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title text-warning">Pack 3 Juegos (2 Simples + 1 Premium)</h5>
-                        <p class="card-text">Mezcla perfecta de diversión. Precio: $75.000.</p>
+                        <h5 class="card-title text-highlight">Pack 3 Juegos (2 Simples + 1 Premium)</h5>
+                        <p class="card-text">Mezcla perfecta de diversión.</p>
+                        <p class="card-price"><strong>$75.000</strong></p>
                     </div>
                 </div>
             </div>
             <!-- Promoción 5 -->
             <div class="col">
-                <div class="card h-100 text-center border-info">
+                <div class="card h-100 text-center">
+                    <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
+                        <img src="img/promo%203.svg" alt="Pack 3 Juegos (1 Simple + 2 Premium)" class="svg-icon2">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title text-info">Pack 3 Juegos (1 Simple + 2 Premium)</h5>
-                        <p class="card-text">Alta calidad para eventos grandes. Precio: $85.000.</p>
+                        <h5 class="card-title text-highlight">Pack 3 Juegos (1 Simple + 2 Premium)</h5>
+                        <p class="card-text">Alta calidad para eventos grandes.</p>
+                        <p class="card-price"><strong>$85.000</strong></p>
                     </div>
                 </div>
             </div>
             <!-- Promoción 6 -->
             <div class="col">
-                <div class="card h-100 text-center border-dark">
+                <div class="card h-100 text-center">
+                    <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
+                        <img src="img/PROMO4.svg" alt="Pack 4 Juegos (2 Simples + 2 Premium)" class="svg-icon2">
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title text-dark">Pack 4 Juegos (2 Simples + 2 Premium)</h5>
-                        <p class="card-text">La mejor opción para cualquier tipo de evento. Precio: $100.000.</p>
+                        <h5 class="card-title text-highlight">Pack 4 Juegos (2 Simples + 2 Premium)</h5>
+                        <p class="card-text">La mejor opción para cualquier tipo de evento.</p>
+                        <p class="card-price"><strong>$100.000</strong></p>
                     </div>
                 </div>
             </div>
@@ -250,114 +261,162 @@
     </div>
 </section>
 
-<section id="galeria" class="py-5 bg-light">
+ <!-- galeria -->
+<section id="galeria-principal" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center text-danger mb-4">Galería de Fotos</h2>
+        <h2 class="text-center text-highlight mb-4">Galería Destacada</h2>
         <div class="row g-3">
             <!-- Imagen 1 -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <img src="assets/images/evento1.jpg" class="img-fluid rounded" alt="Evento 1">
+                    <img src="img/galeria/evento3.JPEG" class="img-fluid rounded" alt="Mesa de pool 1">
                 </div>
             </div>
             <!-- Imagen 2 -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <img src="assets/images/evento2.jpg" class="img-fluid rounded" alt="Evento 2">
+                    <img src="img/galeria/mesa de pool2.JPEG" class="img-fluid rounded" alt="Mesa de pool 2">
                 </div>
             </div>
             <!-- Imagen 3 -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <img src="assets/images/evento3.jpg" class="img-fluid rounded" alt="Evento 3">
+                    <img src="img/galeria/evento.JPEG" class="img-fluid rounded" alt="Evento">
                 </div>
             </div>
             <!-- Imagen 4 -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <img src="assets/images/evento4.jpg" class="img-fluid rounded" alt="Evento 4">
+                    <img src="img/galeria/plataforma360.JPEG" class="img-fluid rounded" alt="Plataforma 360">
                 </div>
             </div>
-            <!-- Imagen 5 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="gallery-item">
-                    <img src="assets/images/evento5.jpg" class="img-fluid rounded" alt="Evento 5">
-                </div>
-            </div>
-            <!-- Imagen 6 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="gallery-item">
-                    <img src="assets/images/evento6.jpg" class="img-fluid rounded" alt="Evento 6">
-                </div>
-            </div>
+        </div>
+        <!-- Botón para ver más -->
+        <div class="text-center mt-4">
+            <a href="galeria.html" class="btn btn-danger btn-lg">Ver más</a>
         </div>
     </div>
 </section>
 
-    <!-- Contacto -->
- <section id="contacto" class="py-5 bg-light">
+
+ <!-- Sección de contacto -->
+<section id="contacto" class="py-5 contacto-section">
     <div class="container">
-        <h2 class="text-center text-danger mb-4">Contáctanos</h2>
-        <p class="text-center mb-5">¿Quieres reservar o necesitas más información? Indica los juegos o promociones que te interesan y la fecha del evento.</p>
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <form action="https://formspree.io/f/xqaklyav" method="POST">
-                    <!-- Nombre -->
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                    </div>
-                    <!-- Correo -->
-                    <div class="mb-3">
-                        <label for="correo" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="correo" name="email" placeholder="Tu correo" required>
-                    </div>
-                    <!-- Juegos/Promociones -->
-                    <div class="mb-3">
-                        <label class="form-label">Juegos o Promociones que te interesan</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="juegos[]" value="Plataforma 360" id="juego1">
-                            <label class="form-check-label" for="juego1">Plataforma 360</label>
+        <div class="contact-box p-4">
+            <h2 class="text-center text-highlight mb-4">Contáctanos</h2>
+            <p class="text-center mb-3">¿Quieres reservar o necesitas más información? Indica los juegos o promociones que te interesan y la fecha del evento.</p>
+            <p class="text-center text-muted mb-5">Nota: El costo de traslado se calcula dependiendo de la dirección proporcionada.</p>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form action="https://formspree.io/f/xqaklyav" method="POST">
+                        <!-- Nombre -->
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="juegos[]" value="Air Hockey" id="juego2">
-                            <label class="form-check-label" for="juego2">Air Hockey</label>
+                        <!-- Correo -->
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="email" placeholder="Tu correo" required>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="juegos[]" value="Mesa de Pool" id="juego3">
-                            <label class="form-check-label" for="juego3">Mesa de Pool</label>
+                        <!-- Dirección -->
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección del Evento</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Escribe la dirección del evento" required>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="juegos[]" value="Taca Taca" id="juego4">
-                            <label class="form-check-label" for="juego4">Taca Taca</label>
+                        <!-- Juegos Disponibles y Promociones -->
+                        <div class="row">
+                            <!-- Juegos Disponibles -->
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Juegos Disponibles</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="juegos[]" value="Air Hockey Premium" id="juego1">
+                                    <label class="form-check-label" for="juego1">Air Hockey Premium ($30.000)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="juegos[]" value="Mesa de Pool Premium" id="juego2">
+                                    <label class="form-check-label" for="juego2">Mesa de Pool Premium ($40.000)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="juegos[]" value="Taca Taca" id="juego3">
+                                    <label class="form-check-label" for="juego3">Taca Taca ($25.000)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="juegos[]" value="Arcade 17”" id="juego4">
+                                    <label class="form-check-label" for="juego4">Arcade 17” ($25.000)</label>
+                                </div>
+                            </div>
+                            <!-- Promociones -->
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Promociones</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="promociones[]" value="Pack 2 juegos simples + premium" id="promo1">
+                                    <label class="form-check-label" for="promo1">Pack 2 juegos simples + premium ($45.000)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="promociones[]" value="Pack 2 juegos simples" id="promo2">
+                                    <label class="form-check-label" for="promo2">Pack 2 juegos simples ($40.000)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="promociones[]" value="Pack 3 juegos simples + 1 premium" id="promo4">
+                                    <label class="form-check-label" for="promo4">Pack 3 juegos simples + 1 premium ($75.000)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="promociones[]" value="Pack 4 juegos simples + 2 premium" id="promo6">
+                                    <label class="form-check-label" for="promo6">Pack 4 juegos simples + 2 premium ($100.000)</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="juegos[]" value="Máquina Arcade" id="juego5">
-                            <label class="form-check-label" for="juego5">Máquina Arcade</label>
+                        <!-- Fecha del Evento -->
+                        <div class="mb-3 mt-4">
+                            <label for="fecha" class="form-label">Fecha del Evento</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha" required>
                         </div>
-                    </div>
-                    <!-- Fecha del Evento -->
-                    <div class="mb-3">
-                        <label for="fecha" class="form-label">Fecha del Evento</label>
-                        <input type="date" class="form-control" id="fecha" name="fecha" required>
-                    </div>
-                    <!-- Mensaje -->
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                    </div>
-                    <!-- Botón Enviar -->
-                    <button type="submit" class="btn btn-danger w-100">Enviar</button>
-                </form>
+                        <!-- Mensaje -->
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        <!-- Botón Enviar -->
+                        <button type="submit" class="btn btn-danger w-100">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>CR4 Entretenciones &copy; 2024</p>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- Logo e Información -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4 text-highlight">CR4 Entretenciones</h5>
+                    <p>Momentos inolvidables con nuestros servicios y juegos para eventos.</p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="col-md-2">
+                    <h5 class="text-uppercase mb-4 text-highlight">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="servicios.html" class="text-white">Servicios</a></li>
+                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Información de Contacto -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4 text-highlight">Contacto</h5>
+                    <p><i class="fas fa-envelope"></i> entretenimiento.cr4@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +56 9 6184 3154</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Bernardo, Chile</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
