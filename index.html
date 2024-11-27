@@ -6,7 +6,12 @@
     <meta name="description" content="CR4 Entretenciones te lleva al siguiente nivel en diversión. Arriendo de juegos para eventos, como la Plataforma 360, mesas de pool, air hockey y más. ¡Reserva ahora y crea momentos inolvidables!">
     <meta name="keywords" content="CR4, juegos para eventos, arriendo de juegos, fiestas, entretenimiento, juegos inflables, eventos corporativos">
     <meta name="author" content="CR4 Entretenciones">
-    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -72,61 +77,52 @@
 
         <!-- SVG Icons -->
         <div class="svg-icons">
-            <img src="./img/plataforma360.svg" class="svg-icon plataforma" alt="Plataforma 360">
-            <img src="./img/airhockey.svg" class="svg-icon airhockey" alt="Air Hockey">
-            <img src="./img/mesadepool.svg" class="svg-icon pool" alt="Mesa de Pool">
-            <img src="./img/tacataca.svg" class="svg-icon tacataca" alt="Taca Taca">
-            <img src="./img/arcade.svg" class="svg-icon arcade" alt="Arcade">
+            <img src="./img/plataforma360.svg" class="svg-icon plataforma" alt="Plataforma 360" loading="lazy">
+            <img src="./img/airhockey.svg" class="svg-icon airhockey" alt="Air Hockey" loading="lazy">
+            <img src="./img/mesadepool.svg" class="svg-icon pool" alt="Mesa de Pool" loading="lazy">
+            <img src="./img/tacataca.svg" class="svg-icon tacataca" alt="Taca Taca" loading="lazy">
+            <img src="./img/arcade.svg" class="svg-icon arcade" alt="Arcade" loading="lazy">
         </div>
     </div>
 </section>
-    <!-- Servicios -->
-<!-- Servicios -->
+
 <section id="servicios" class="py-5">
     <div class="container">
         <h2 class="text-center text-highlight mb-4">Nuestros Servicios</h2>
-        <div id="serviciosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="serviciosCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicadores -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#serviciosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
             <!-- Contenido del Carrusel -->
             <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <!-- Card 1 -->
-                        <div class="col-md-4">
-                            <div class="card h-100 text-center">
-                                <img src="img/icono aro de luz.png" class="card-img-top" alt="Plataforma 360">
-                                <div class="card-body">
-                                    <h5 class="card-title">Plataforma 360</h5>
-                                    <p class="card-text">Incluye luces LED, cotillón y edición de videos.</p>
-                                    <p class="text-bold">$60.000</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="row justify-content-center align-items-center">
+                            <!-- Card 1 -->
+                            <div class="col-md-6 d-flex justify-content-center mb-3">
+                                <div class="card h-100 text-center">
+                                    <img src="img/icono aro de luz.png" class="card-img-top" alt="Plataforma 360">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Plataforma 360</h5>
+                                        <p class="card-text">Incluye luces LED, cotillón y edición de videos.</p>
+                                        <p class="text-bold">$60.000</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="col-md-4">
-                            <div class="card h-100 text-center">
-                                <img src="img/icono air hockey.png" class="card-img-top" alt="Air Hockey">
-                                <div class="card-body">
-                                    <h5 class="card-title">Air Hockey</h5>
-                                    <p class="card-text">Ideal para todo tipo de eventos.</p>
-                                    <p class="text-bold">$30.000</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="col-md-4">
-                            <div class="card h-100 text-center">
-                                <img src="img/icono mesa de pool.png" class="card-img-top" alt="Mesa de Pool">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mesa de Pool</h5>
-                                    <p class="card-text">Diviértete en grande.</p>
-                                    <p class="text-bold">$40.000</p>
+                            <!-- Card 2 -->
+                            <div class="col-md-6 d-flex justify-content-center mb-3">
+                                <div class="card h-100 text-center">
+                                    <img src="img/icono air hockey.png" class="card-img-top" alt="Air Hockey">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Air Hockey</h5>
+                                        <p class="card-text">Ideal para todo tipo de eventos.</p>
+                                        <p class="text-bold">$30.000</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -135,20 +131,39 @@
 
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <!-- Card 4 -->
-                        <div class="col-md-4">
-                            <div class="card h-100 text-center">
-                                <img src="img/icono taca taca.png" class="card-img-top" alt="Taca Taca">
-                                <div class="card-body">
-                                    <h5 class="card-title">Taca Taca</h5>
-                                    <p class="card-text">Un clásico para tus eventos.</p>
-                                    <p class="text-bold">$25.000</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="row justify-content-center align-items-center">
+                            <!-- Card 3 -->
+                            <div class="col-md-6 d-flex justify-content-center mb-3">
+                                <div class="card h-100 text-center">
+                                    <img src="img/icono mesa de pool.png" class="card-img-top" alt="Mesa de Pool">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mesa de Pool</h5>
+                                        <p class="card-text">Diviértete en grande.</p>
+                                        <p class="text-bold">$40.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="col-md-6 d-flex justify-content-center mb-3">
+                                <div class="card h-100 text-center">
+                                    <img src="img/icono taca taca.png" class="card-img-top" alt="Taca Taca">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Taca Taca</h5>
+                                        <p class="card-text">Un clásico para tus eventos.</p>
+                                        <p class="text-bold">$25.000</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="carousel-item">
+                    <div class="row justify-content-center">
                         <!-- Card 5 -->
-                        <div class="col-md-4">
+                        <div class="col-md-6 d-flex justify-content-center mb-3">
                             <div class="card h-100 text-center">
                                 <img src="img/icono arcade.png" class="card-img-top" alt="Máquina Arcade">
                                 <div class="card-body">
@@ -160,20 +175,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
             <!-- Controles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: darkred;"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: darkred;"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
     </div>
 </section>
+
 <!-- Promociones -->
 <section id="promociones" class="py-5 bg-light">
     <div class="container">
@@ -183,7 +197,7 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
-                        <img src="img/pack%202%20simple.svg" alt="Pack 2 Juegos Simple + Premium" class="svg-icon2">
+                        <img src="img/pack%202%20simple.svg" alt="Pack 2 Juegos Simple + Premium" class="svg-icon2" loading="lazy">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-highlight">Pack 2 Juegos Simple + Premium</h5>
@@ -196,7 +210,7 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
-                        <img src="img/pack%20simple%20y%20premium.svg" alt="Pack 2 Juegos Simples" class="svg-icon2">
+                        <img src="img/pack%20simple%20y%20premium.svg" alt="Pack 2 Juegos Simples" class="svg-icon2" loading="lazy">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-highlight">Pack 2 Juegos Simples</h5>
@@ -209,7 +223,7 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
-                        <img src="img/pack2%20premium.svg" alt="Pack 2 Juegos Premium" class="svg-icon2">
+                        <img src="img/pack2%20premium.svg" alt="Pack 2 Juegos Premium" class="svg-icon2" loading="lazy">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-highlight">Pack 2 Juegos Premium</h5>
@@ -222,7 +236,7 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
-                        <img src="img/pack3.2.svg" alt="Pack 3 Juegos (2 Simples + 1 Premium)" class="svg-icon2">
+                        <img src="img/pack3.2.svg" alt="Pack 3 Juegos (2 Simples + 1 Premium)" class="svg-icon2" loading="lazy">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-highlight">Pack 3 Juegos (2 Simples + 1 Premium)</h5>
@@ -235,7 +249,7 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
-                        <img src="img/promo%203.svg" alt="Pack 3 Juegos (1 Simple + 2 Premium)" class="svg-icon2">
+                        <img src="img/promo%203.svg" alt="Pack 3 Juegos (1 Simple + 2 Premium)" class="svg-icon2" loading="lazy">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-highlight">Pack 3 Juegos (1 Simple + 2 Premium)</h5>
@@ -248,7 +262,7 @@
             <div class="col">
                 <div class="card h-100 text-center">
                     <div class="card-header bg-image d-flex justify-content-center align-items-center flex-wrap">
-                        <img src="img/PROMO4.svg" alt="Pack 4 Juegos (2 Simples + 2 Premium)" class="svg-icon2">
+                        <img src="img/PROMO4.svg" alt="Pack 4 Juegos (2 Simples + 2 Premium)" class="svg-icon2" loading="lazy">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-highlight">Pack 4 Juegos (2 Simples + 2 Premium)</h5>
@@ -269,25 +283,25 @@
             <!-- Imagen 1 -->
             <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <img src="img/galeria/evento3.JPEG" class="img-fluid rounded" alt="Mesa de pool 1">
+                    <img src="img/galeria/evento3.JPEG" class="img-fluid rounded" alt="Mesa de pool 1" loading="lazy">
                 </div>
             </div>
             <!-- Imagen 2 -->
             <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <img src="img/galeria/mesa de pool2.JPEG" class="img-fluid rounded" alt="Mesa de pool 2">
+                    <img src="img/galeria/mesa de pool2.JPEG" class="img-fluid rounded" alt="Mesa de pool 2" loading="lazy">
                 </div>
             </div>
             <!-- Imagen 3 -->
             <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <img src="img/galeria/evento.JPEG" class="img-fluid rounded" alt="Evento">
+                    <img src="img/galeria/evento.JPEG" class="img-fluid rounded" alt="Evento" loading="lazy">
                 </div>
             </div>
             <!-- Imagen 4 -->
             <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <img src="img/galeria/plataforma360.JPEG" class="img-fluid rounded" alt="Plataforma 360">
+                    <img src="img/galeria/plataforma360.JPEG" class="img-fluid rounded" alt="Plataforma 360" loading="lazy">
                 </div>
             </div>
         </div>
@@ -297,8 +311,6 @@
         </div>
     </div>
 </section>
-
-
  <!-- Sección de contacto -->
 <section id="contacto" class="py-5 contacto-section">
     <div class="container">
@@ -419,6 +431,7 @@
 
 
     <!-- Bootstrap JS -->
+    <script src="main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
